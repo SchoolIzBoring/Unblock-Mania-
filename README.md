@@ -4,7 +4,7 @@
 
 # Unblock-Mania
 
-Unblocked Websites is an Open Source tool Website for school that includes games, proxies, tools, and more
+Unblock Mania is an new and improved Unblocked Game Sites that has laods of games, proxies, exploits, and a cool ui. Use this at anytime and make sure to support me by leaving a star.
 
 
 
