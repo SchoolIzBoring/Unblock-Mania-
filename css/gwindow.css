@@ -1,1 +1,95 @@
-
+.game-window {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    border: 10px solid #333;
+    border-radius: 10px;
+    z-index: 1000;
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .game-content {
+    flex-grow: 1;
+    overflow: hidden;
+    height: 100%;
+  }
+  
+  .game-iframe {
+    border: none;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    min-height: 500px;
+  }
+  
+  .game-window.fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 5000px;
+    height: 2080px;
+    z-index: 9999;
+  }
+  
+  .game-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: transparent;
+  }
+  
+  .game-controls-left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-grow: 1;
+  }
+  
+  .game-controls-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 50px;
+  }
+  
+  .game-control {
+    background-color: #333;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .game-control:hover {
+    background-color: #444;
+  }
+  
+  .game-control.fullscreen {
+    margin-right: 10px;
+  }
+  
+  .game-control.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .game-control.home img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  
